@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "username": "fstLogin",
+      "passwordHash": "$2b$10$G/rulJrhndU4KAsEFuWoiu8.Clmn50gA.O8tym0CI4zw8Z9uvgsN.",
+      "token": "98c95943747d829f228c9671f265564d117691ced1f3fd75a9f0dce7898bb135"
+    },
+    {
+      "username": "sndLogin",
+      "passwordHash": "$2b$10$v.MI/cDxwCfIcwV.u/OG4OJ1FkZsMZYvP5Kdru7Y1nCrA96TDdAga",
+      "token": "89b68ae3c425e88b6e16c4b742942e28769c941d73df8aeefe7997cafe151e3f"
+    },
+    {
+      "username": "temp1",
+      "passwordHash": "$2b$10$0Sd7t9Lh.XlZ4c3qS9d3nubA85UnMjEX1IWYbtM/KszTD7Xa3YZz.",
+      "token": "09fddacbad7e34d6bd11aeb3609546e89337a29c20abb852a2f8ebb073eae136"
+    }
+  ]
+}
