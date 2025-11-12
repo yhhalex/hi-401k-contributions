@@ -182,14 +182,14 @@ export default function HomePage() {
 
                   {/* RIGHT: Overview + Edit Modal */}
                   <div className="flex-[0.9] space-y-3 text-left">
-                    <p><strong>Annual Salary:</strong> ${snapshot.salaryAnnual ?? 'N/A'}</p>
+                    <p><strong>Annual Salary:</strong> ${snapshot.salaryAnnual.toLocaleString() ?? 'N/A'}</p>
                     <p><strong>Age:</strong> {snapshot.age ?? 'N/A'}</p>
                     <p><strong>Contribution Type:</strong> {selection.type ?? 'N/A'}</p>
                     <p><strong>Contribution Value:</strong> {selection.value ?? 'N/A'}</p>
 
                     <div className="mt-6 border-t pt-3 text-gray-800">
                       <p className="text-base font-semibold">
-                        Total YTD Contributions:{" "}
+                        YTD Contributions:{" "}
                         <span className="text-blue-600">
                           {snapshot.ytdContributions
                             ? `$${snapshot.ytdContributions.toLocaleString()}`
@@ -316,7 +316,7 @@ export default function HomePage() {
                 )}
               </div>
             </div>
-            <div className="w-full lg:w-[40%] bg-white p-6 rounded-xl shadow-md text-gray-700">
+            <div className="w-full lg:w-[41%] bg-white p-6 rounded-xl shadow-md text-gray-700 min-w-[400px]">
               <ContributionImpact
                 age={snapshot.age ?? 0}
                 salaryAnnual={snapshot.salaryAnnual ?? 0}
