@@ -8,12 +8,11 @@ import userDb from '@/lib/userDb'
 interface Contribution {
   snapshot: {
     salaryAnnual: number
-    payFrequency: string
     ytdContributions: number
     age: number
   }
   selection: {
-    type: 'percent' | 'dollar'
+    type: 'percent' | 'fixed'
     value: number
   }
 }

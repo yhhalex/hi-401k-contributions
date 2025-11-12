@@ -17,12 +17,11 @@ db.read()
 type Contribution = {
   snapshot: {
     salaryAnnual: number | null
-    payFrequency: string | null
     ytdContributions: number | null
     age: number | null
   }
   selection: {
-    type: 'percent' | 'dollar' | null
+    type: 'percent' | 'fixed' | null
     value: number | null
   }
   history: []
@@ -53,7 +52,6 @@ export async function POST(req: Request) {
   storeDb.data.users[username] = {
     snapshot: {
       salaryAnnual: 0,
-      payFrequency: '',
       ytdContributions: 0,
       age: null,
     },

@@ -10,7 +10,7 @@ type DBData = {
     age: number
   }
   selection: {
-    type: 'percent' | 'dollar'
+    type: 'percent' | 'fixed'
     value: number
   }
 }
