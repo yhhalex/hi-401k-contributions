@@ -31,6 +31,10 @@ export async function POST(req: Request) {
   db.write()
 
   const res = NextResponse.json({ success: true })
-  res.cookies.set('session', token, { httpOnly: true, path: '/' })
+  res.cookies.set('session', token, {
+    httpOnly: true,
+    path: '/',
+    maxAge: undefined, // cookie removed when browser is closed
+  })  
   return res
 }
